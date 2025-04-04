@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  width: 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+
+  background-color: #fefae0;
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  gap: 2vh;
+}
+.hidden{
+  display: none;
+}
+
+
+
+/*******************GENERAL********************/
+
+.form{
+  flex: 1;
+  border: 2px solid black;
+  padding: 5vh;
+  background-color: #e9edc9;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+/*HEADER  **************/
+
+
+.headerpagtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+/**********/
+
+.basicinfo, .educationalinfo, .datos, .experience{
+  background-color: #000000;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5%;
+  color: white;
+}
+
+.titulo{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  color: #cbb4ff;
+
+}
+
+/*BASICINFO ************************************************************/
+
+.resto{
+  display: flex;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 8px 0 20px 0;
+  background-color: #494949;
+  color: white;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea{
+  height: 12vh;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #5e9bff;
+  box-shadow: 0 0 0 2px rgba(94, 155, 255, 0.3);
+  outline: none;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="color"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Quitar el estilo por defecto de los navegadores */
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+/******         FINAL ****************************************************/
+.final .header {
+  max-width: 100%;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+}
+.foto{
+  border: 2px solid black;
+  background-color: white;
+  min-width: 140px;
+  width: 140px;
+  height: 200px;
+  margin-left: auto;
+}
+
+img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+.resultado{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+
+}
+.final{
+  font-size: 15px;
+  height: 1133px ;
+  width: 793px ;
+  position: sticky;
+  top: 20px;
+
+
+  background-color: #ecdcb3;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 5px;
+
+  padding: 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+} 
+
+hr{
+  border: 2px solid #000000;
+}
+.nombre{
+  word-wrap: break-word; /* Rompe palabras largas si es necesario */
+  white-space: normal;   /* Permite saltos de línea */
+  overflow-wrap: break-word;
+  justify-content: center;
+  font-size: 40px;
+  
+  min-width: 0; /* 🔥 evita que fuerce el ancho si es muy largo */
+}
+.datosGenerales{
+  font-style: italic;
+}
+
+.curso{
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
